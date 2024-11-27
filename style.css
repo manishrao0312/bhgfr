@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6ff; /* Soft lavender background */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Standard text color */
+  }
+  
+  .container {
+    max-width: 1200px; /* Limit the max width */
+    width: 90%; /* Use a percentage for better responsiveness */
+    margin: auto;
+    padding: 20px;
+    position: relative; /* Add relative positioning to contain absolute elements */
+  }
+  
+  /* Header Styles */
+  h1 {
+    text-align: center;
+    color: #5c4d99; /* Darker purple for main title */
+    font-size: 2.5em; /* Larger font size for the main title */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  /* Section Styles */
+  section {
+    background: #ffffff; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: #f4f0ff; /* Light purple background on hover */
+  }
+  
+  h2 {
+    color: #6f3c8b; /* A lighter purple for section titles */
+    margin-bottom: 15px;
+    font-size: 1.8em; /* Increased font size for section titles */
+  }
+  
+  /* Button Styles */
+  .buttons {
+    position: absolute; /* Absolute positioning for top right corner */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    display: flex; /* Use flex to arrange buttons in a row */
+    gap: 10px; /* Space between buttons */
+  }
+  
+  /* Input Styles */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #6f3c8b; /* Change border color on focus to a light purple */
+    outline: none; /* Remove outline */
+  }
+  
+  button {
+    background-color: #6f3c8b; /* Purple button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+  
+  button:hover {
+    background-color: #4e287e; /* Darker shade of purple for hover effect */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Result Display Styles */
+  #weather-result,
+  #flood-prediction-result,
+  #earthquake-prediction-result,
+  #tsunami-prediction-result,
+  #tornado-prediction-result,
+  #data-visualization {
+    border: 1px solid #6f3c8b; /* Use purple for borders */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #f4f0ff; /* Light purple background for results */
+  }
+  
+  /* Feedback Form Styles */
+  #feedback-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #feedback-input {
+    resize: vertical;
+  }
+  
+  /* Map Section */
+  #map {
+    height: 300px; /* Placeholder for map height */
+    background-color: #d1c6e7; /* Light lavender for map background */
+    border: 1px solid #6f3c8b;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .container {
+        width: 95%; /* Full width on small screens */
+    }
+    
+    h1 {
+        font-size: 2em; /* Responsive font size */
+    }
+  
+    h2 {
+        font-size: 1.5em; /* Responsive section title size */
+    }
+  
+    button {
+        width: 100%; /* Full-width buttons on mobile */
+    }
+  
+    section {
+        padding: 15px; /* Adjust padding on small screens */
+    }
+  
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: flex-start; /* Align buttons to the start */
+    }
+  }
+  
+  /* Card Styles for Predictions */
+  .prediction-card {
+    background-color: #f4f0ff; /* Light purple */
+    border: 1px solid #6f3c8b; /* Purple border */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .prediction-card:hover {
+    transform: scale(1.02); /* Slightly enlarge prediction cards on hover */
+    background-color: #e8d7f3; /* Darker shade on hover */
+  }
+  
+  /* Optional: Modify the weather icon to fit the dark background */
+  .weather-icon {
+    filter: brightness(0) invert(1); /* Adjust icon colors for better visibility */
+  }
+  
+  /* Button Styles */
+  .button {
+    display: inline-block; /* To allow for margins */
+    background-color: #6f3c8b; /* Button color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .button:hover {
+    background-color: #4e287e; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }

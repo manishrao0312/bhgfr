@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Natural Calamity Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Natural Calamity Prediction</h1>
+
+        <!-- Weather and Natural Calamity Prediction Buttons -->
+        <div class="buttons">
+            <a href="login.html" class="button">Login</a>
+            <a href="register.html" class="button">Register</a>
+        </div>
+
+        <!-- Overview Section -->
+        <section id="overview-section">
+            <h2>Welcome to the AI Natural Calamity Prediction System</h2>
+            <p>
+                Our platform uses AI to predict future natural calamities based on past data, helping you stay prepared and safe. 
+                Get real-time updates and personalized advice through our AI chatbot.
+            </p>
+        </section>
+
+        <!-- Daily Weather Forecast Section -->
+        <section id="weather-section">
+            <h2>Daily Weather Forecast</h2>
+            <input type="text" id="city-input" placeholder="Enter your city">
+            <button id="get-weather-btn">Get Weather</button>
+            <div id="weather-result"></div>
+        </section>
+
+                <section id="predictions">
+                <h2>Calamity Predictions</h2>
+                <div>
+                    <h3>Flood Prediction</h3>
+                    <p>Would you like to predict the flood risk for your location?</p>
+                    <a href="http://127.0.0.1:5000/calamity-prediction"><button>Predict Flood Risk</button></a>
+                </div>
+
+                <div>
+                    <h3>Earthquake Prediction</h3>
+                    <p>Would you like to predict the earthquake risk for your location?</p>
+                    <a href="http://127.0.0.1:5000/calamity-prediction"><button>Predict Earthquake Risk</button></a>
+                </div>
+
+                <div>
+                    <h3>Tsunami Prediction</h3>
+                    <p>Would you like to predict the tsunami risk for your location?</p>
+                    <a href="http://127.0.0.1:5000/calamity-prediction"><button>Predict Tsunami Risk</button></a>
+                </div>
+
+                <div>
+                    <h3>Tornado Prediction</h3>
+                    <p>Would you like to predict the tornado risk for ur location?</p>
+                    <a href="http://127.0.0.1:5000/calamity-prediction"><button>Predict Tornado Risk</button></a>
+                </div>
+            </section>
+
+            <!-- Interactive Map Section -->
+        <section id="map-section">
+            <h2>Interactive Map</h2>
+            <p>Explore areas with recent natural calamities and future risk predictions.</p>
+            <div id="map" style="height: 400px;"></div> <!-- Map embedded here -->
+        </section>
+        </main>
+        <!-- Contact & Feedback Section -->
+        <section id="contact-section">
+            <h2>Contact Us & Feedback</h2>
+            <form id="feedback-form">
+                <textarea id="feedback-input" placeholder="Your feedback..."></textarea>
+                <button type="submit" id="submit-feedback-btn">Submit Feedback</button>
+            </form>
+            <p>For any inquiries, reach us at 
+                <a href="mailto:support@calamitypredictor.com">support@calamitypredictor.com</a>
+            </p>
+        </section>
+    </div>
+</body>
+</html>
